@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoLIst</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link rel ="stylesheet" href = "../Css_files/Todo.css">
+
+  <link rel="stylesheet" href="../Css_files/outlines.css">
+  <link rel="stylesheet" href="../Css_files/requests.css">
+  <
+  <script src="../JavaScript/timer.js"></script>
+  <script src="../JavaScript/requests.js"></script>
+
+</head>
+<body>
+<header class="header">
+  <nav class="header__nav">
+    <ul>
+      <li><a class="header-a" href="../index.html">Главная</a></li>
+      <li><a class="header-a" href="../HTML_Pages/Portfolio.html">Портфолио</a></li>
+      <li> <a class="header-a"  href="../HTML_Pages/Start.html">Lab1</a> </li>
+      <div class="dropdown">
+        <a onclick="showMenu()" class="dropbtn">Навигация</a>
+        <div id="myDropdown" class="dropdown-content">
+          <li> <a class="header-a"  href="../HTML_Pages/Experience.html">Опыт</a> </li>
+          <li>  <a class="header-a"  href="Gallery.html">Галерея</a> </li>
+          <li> <a class="header-a"  href="../HTML_Pages/TodoList.html">Todo</a> </li>
+          <li> <a class="header-a"  href="../HTML_Pages/Requests.html">Запрос</a> </li>
+          <li> <a class="header-a"  href="../HTML_Pages/Slider.html">Slider</a> </li>
+        </div>
+      </div>
+    </ul>
+  </nav>
+</header>
+
+<main id = "intro">
+  <section class="content">
+          <div class =" container content__container">
+            <div class="content__about">
+
+                      <button id="add-card">Add</button>
+                      <div id="cards">
+                        <div id="preloader" class="card preloader disabled">
+                          <img class="preloader-img" src="../Photos/hug.gif" >
+                        </div>
+                      </div>
+                                    <template id="one-card">
+                                      <div class="card">
+                                        <h1></h1>
+                                        <hr>
+                                        <div class="card-body" id="card-body"></div>
+                                      </div>
+                                    </template>
+            </div>
+          </div>
+  </section>
+</main>
+<script src="../three.min.js"></script>
+<script src="../vanta.clouds.min.js"></script>
+<script src="../app.js"></script>
+<footer>
+  <p>Короткова Екатерина <span>©2021</span></p>
+</footer>
+</body>
+</html>

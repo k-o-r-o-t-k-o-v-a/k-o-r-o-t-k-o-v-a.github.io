@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoLIst</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel ="stylesheet" href = "../Css_files/Todo.css">
+
+    <link rel="stylesheet" href="../Css_files/outlines.css">
+    <script src="../JavaScript/timer.js"></script>
+
+
+</head>
+<body>
+<header class="header">
+    <nav class="header__nav">
+        <ul>
+            <li><a class="header-a" href="../index.html">Главная</a></li>
+            <li><a class="header-a" href="../HTML_Pages/Portfolio.html">Портфолио</a></li>
+            <div class="dropdown">
+                <a onclick="showMenu()" class="dropbtn">Навигация</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <li> <a class="header-a"  href="../HTML_Pages/Experience.html">Опыт</a> </li>
+                    <li>  <a class="header-a"  href="Gallery.html">Галерея</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/TodoList.html">Todo</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/Requests.html">Запрос</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/Slider.html">Slider</a> </li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+<main id = "intro">
+    <section class="content">
+    <div class =" container content__container">
+        <div class="content__about">
+            <h1 class="content__title">Todo App</h1>
+            <div class="flex-wrapper">
+                <div class="add-todo-wrapper">
+                    <form onsubmit="return false" class="input-wrapper">
+                        <label for="description-task">
+                            <input class="submit_on_enter" type="text" id="description-task">
+                        </label>
+                    </form>
+                    <div class="button-wrapper">
+                        <button type="submit" id="add-task-btn">Add</button>
+                    </div>
+                </div>
+                <h2> Todo List: </h2>
+                <div class="todos-wrapper">
+                    <template id ="tmp">
+                        <div  id ="todo_item" class="todo-item ">
+                            <div id="descript" class ="description"></div>
+                            <div class ="buttons">
+                                <input id="input_id" onclick="" class=" btn-complete" type="checkbox" >
+                                <button id = "button_id" onclick="" class="bth-delete">Delete</button>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="../JavaScript/Todo.js"></script>
+</main>
+<script src="../three.min.js"></script>
+<script src="../vanta.clouds.min.js"></script>
+<script src="../app.js"></script>
+</body>
+<footer>
+    <p>Короткова Екатерина <span>©2021</span></p>
+</footer>
+</html>

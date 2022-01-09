@@ -1,0 +1,13 @@
+.photo-grid {
+    display: grid;
+    width: 80%;
+    margin: 10px auto 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 1em;
+}
+
+img {
+
+}
+

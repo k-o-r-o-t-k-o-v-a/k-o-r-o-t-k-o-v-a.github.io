@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="../Css_files/outlines.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <script src="../JavaScript/timer.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <nav class="header__nav">
+        <ul>
+            <li><a class="header-a" href="../index.html">Главная</a></li>
+            <li><a class="header-a" href="../HTML_Pages/Portfolio.html">Портфолио</a></li>
+            <li> <a class="header-a"  href="../HTML_Pages/Start.html">Lab1</a> </li>
+            <div class="dropdown">
+                <a onclick="showMenu()" class="dropbtn">Навигация</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <li> <a class="header-a"  href="../HTML_Pages/Experience.html">Опыт</a> </li>
+                    <li>  <a class="header-a"  href="Gallery.html">Галерея</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/TodoList.html">Todo</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/Requests.html">Запрос</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/Slider.html">Slider</a> </li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main id = "intro">
+    <section class="content" id="portfolio">
+        <div class="container content__container">
+            <div class="content__about">
+                <h1 class="content__title">Что я знаю и умею?</h1>
+                <ul>
+                    <li class="content__li">Языки программирования: C#</li>
+                    <li class="content__li">Опыт работы с linq, unity 3D</li>
+                    <li class="content__li">Опыт работы с OS Linux</li>
+                    <li class="content__li">Опыт работы с OS Windows</li>
+                    <li class="content__li">Работа с git</li>
+                </ul>
+
+                <p class="content__description">
+                    С моими работами вы можете ознакомиться на <strong> Github </strong> <a class="content__link" href="https://github.com/k-o-r-o-t-k-o-v-a"> <i class='bx bxl-github'></i> </a>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../three.min.js"></script>
+<script src="../vanta.clouds.min.js"></script>
+<script src="../app.js"></script>
+</body>
+<footer>
+    <p>Короткова Екатерина <span>©2021</span></p>
+</footer>
+</html>

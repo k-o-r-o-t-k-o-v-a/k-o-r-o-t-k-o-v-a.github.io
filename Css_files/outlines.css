@@ -1,0 +1,296 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f2f8;
+    line-height: normal;
+}
+
+.code {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.ascii {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.header {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: #f2f2f8;
+    z-index: 100;
+}
+
+.header li {
+    list-style-type: none;
+
+}
+
+nav ul {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    text-transform: capitalize;
+}
+
+nav ul li {
+    margin: 0 25px;
+    display: inline;
+    vertical-align: middle;
+}
+
+
+header a {
+    color: grey;
+    margin: auto;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.header a:hover {
+    color: #4facfe;
+}
+
+
+section {
+    padding: 150px 80px;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: auto;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1530px;
+    width: 100%;
+    margin: auto;
+}
+
+.content__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 290px,1fr));
+    grid-gap: 20px;
+}
+
+
+.content__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.content__title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.content__subtitle {
+    font-size: 24px;
+}
+
+.content__li {
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+.content__description {
+    font-size: 20px;
+}
+.content__links {
+    display: flex;
+}
+
+.content__link {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.content__link:hover {
+    color: #4facfe;
+}
+
+
+.content__box {
+    max-width: 300px;
+    justify-self: center;
+    overflow: hidden;
+    border: 10px solid #fff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+    border-radius: 35%;
+}
+
+.content__form {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    max-height: 500px;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 978px) {
+
+    .header {
+        height: 70px;
+    }
+
+    header a {
+        font-size: 18px;
+    }
+    .content {
+        padding-top: 100px;
+    }
+
+    .content__container {
+        grid-row-gap: 20px;
+    }
+
+    .content__title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .content__subtitle {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .content__description {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+
+    .content__about {
+        text-align: center;
+    }
+
+    .content__links {
+        justify-content: center;
+    }
+
+    .content__box {
+        max-width: 350px;
+        max-height: 350px;
+        justify-self: center;
+    }
+
+    .content__form {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 645px) {
+    .header{
+        height: 50px;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin-right:15px;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    nav ul li {
+        margin-right:1px;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+}
+.content__form {
+    justify-self: center;
+}
+
+form p {
+    font-size: 22px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background: #f2f2f8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width:606px) {
+    footer {
+        display: none;
+    }
+
+}
+
+
+.header_now {
+    color: black;
+    font-size: 22.5px;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    margin: 0 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #f2f2f8;
+
+}
+
+
+.show {display:block;}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="../Css_files/outlines.css">
+  <link rel="stylesheet" href="../Css_files/table.css">
+  <link rel="stylesheet" href="../Css_files/gallery.css">
+  <link rel="stylesheet" href="../Css_files/simple-adaptive-slider.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+  <script src="../JavaScript/timer.js"></script>
+  <script src="../simple-adaptive-slider.js"></script>
+  <script src="../Slider.js"></script>
+
+</head>
+<body>
+<header class="header">
+  <nav class="header__nav">
+    <ul>
+      <li><a class="header-a" href="../index.html">Главная</a></li>
+      <li><a class="header-a" href="../HTML_Pages/Portfolio.html">Портфолио</a></li>
+      <li> <a class="header-a"  href="../HTML_Pages/Start.html">Lab1</a> </li>
+      <div class="dropdown">
+        <a onclick="showMenu()" class="dropbtn">Навигация</a>
+        <div id="myDropdown" class="dropdown-content">
+          <li> <a class="header-a"  href="../HTML_Pages/Experience.html">Опыт</a> </li>
+          <li>  <a class="header-a"  href="../HTML_Pages/Gallery.html">Галерея</a> </li>
+          <li> <a class="header-a"  href="../HTML_Pages/TodoList.html">Todo</a> </li>
+          <li> <a class="header-a"  href="../HTML_Pages/Requests.html">Запрос</a> </li>
+          <li> <a class="header-a"  href="../HTML_Pages/Slider.html">Slider</a> </li>
+        </div>
+      </div>
+    </ul>
+  </nav>
+</header>
+
+<main id = "intro">
+  <section class="content" id="photo">
+    <div class =" container content__container">
+      <div class="content__about">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item">
+                <img src="../Photos/1.png" >
+              </div>
+              <div class="slider__item">
+                <img src="../Photos/2.png" >
+              </div>
+              <div class="slider__item">
+                <img src="../Photos/3.png" >
+              </div>
+              <div class="slider__item">
+                <img src="../Photos/1.png" >
+              </div>
+            </div>
+          </div>
+          <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+          <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+          <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="../three.min.js"></script>
+<script src="../vanta.clouds.min.js"></script>
+<script src="../app.js"></script>
+</body>
+<footer>
+  <p>Короткова Екатерина <span>©2021</span></p>
+</footer>
+</html>
